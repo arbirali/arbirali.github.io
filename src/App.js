@@ -1,13 +1,15 @@
 import './App.css';
+import { Box } from '@mui/material';
+import DrawerAppBar from './components/DrawerAppBar';
+import AppRoutes from './routes';
 
-function App() {
-  return (
-    <div className="App">
-      <div className="main">
-        <h1>Rahat Ali</h1>
-      </div>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <DrawerAppBar />
+    <Box component="main">
+      <AppRoutes />
+    </Box>
+  </div>
+)
 
 export default App;
