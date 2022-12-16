@@ -1,5 +1,11 @@
+import Info from 'dashboard/Info';
+import AboutMe from 'dashboard/AboutMe';
+
 const Dashboard = () => (
-  <h1>Rahat Ali</h1>
+  <>
+    <Info />
+    <AboutMe />
+  </>
 );
 
 export default Dashboard;

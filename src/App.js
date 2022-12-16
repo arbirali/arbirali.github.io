@@ -1,15 +1,14 @@
-import './App.css';
-import { Box } from '@mui/material';
+import { Container } from '@mui/material';
 import DrawerAppBar from './components/DrawerAppBar';
 import AppRoutes from './routes';
 
-const App = () => (
-  <div className="App">
-    <DrawerAppBar />
-    <Box component="main">
+const App = ({setLightTheme}) => (
+  <>
+    <DrawerAppBar setLightTheme={setLightTheme} />
+    <Container maxWidth="lg" sx={{ pt: 3, pb: 3 }}>
       <AppRoutes />
-    </Box>
-  </div>
+    </Container>
+  </>
 )
 
 export default App;

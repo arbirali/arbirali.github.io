@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { ThemeProvider } from '@mui/material/styles';
@@ -9,16 +9,17 @@ import GlobalCSS from './assets/styles/global';
 import reportWebVitals from './reportWebVitals';
 
 const Main = () => {
-  const light = Boolean(0);
+  const [isLightTheme, setLightTheme] = useState(false);
+
   return (
-    <React.StrictMode>
-      <ThemeProvider theme={light ? lightTheme : darkTheme}>
-        <GlobalCSS theme={light} />
+    <StrictMode>
+      <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
+        <GlobalCSS theme={isLightTheme} />
         <BrowserRouter>
-          <App />
+          <App setLightTheme={setLightTheme} />
         </BrowserRouter>
       </ThemeProvider>
-    </React.StrictMode>
+    </StrictMode>
   );
 };
 

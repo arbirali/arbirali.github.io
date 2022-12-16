@@ -2,7 +2,6 @@ import { useState } from 'react';
 import {
   AppBar,
   Box,
-  Divider,
   Drawer,
   IconButton,
   List,
@@ -12,6 +11,8 @@ import {
   Toolbar,
   Typography,
   Button,
+  Switch,
+  FormControlLabel,
 } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -21,19 +22,19 @@ const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
 
 const DrawerAppBar = (props) => {
-  const { window } = props;
+  const { window, setLightTheme } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
 
+  const handleThemeToggle = (event) => {
+    setLightTheme(!event.target.checked);
+  };
+
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        Rahat Ali
-      </Typography>
-      <Divider />
+    <Box onClick={handleDrawerToggle}>
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
@@ -64,10 +65,8 @@ const DrawerAppBar = (props) => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            Rahat Ali
-          </Typography>
+            sx={{ flexGrow: 1, textAlign: 'left' }}
+          > </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Button sx={{ color: '#fff' }} to="profile" component={RouterLink}>
               Profile
@@ -77,6 +76,11 @@ const DrawerAppBar = (props) => {
                 {item}
               </Button>
             ))}
+              <FormControlLabel
+                onChange={handleThemeToggle}
+                label="Dark Mode"
+                control={<Switch defaultChecked />}
+              />
           </Box>
         </Toolbar>
       </AppBar>

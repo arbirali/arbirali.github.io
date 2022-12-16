@@ -43,11 +43,9 @@ export default createGlobalStyle`
     border-radius: 5px;
   }
 
-
-
   body {
     min-width: 320px;
-    background: ${(props) => (props.theme ? 'white' : colors.darkBlue)};
+    background: ${(props) => (props.theme ? '#f1f1f1' : colors.darkBlue)};
     color: ${(props) => (props.theme ? 'rgba(0,0,0, .7)' : colors.lightBlue)};
     font-size: ${fonts.baseFontSize};
     font-family: ${fonts.fontFamilySanSerif};
@@ -56,39 +54,16 @@ export default createGlobalStyle`
     text-rendering: optimizeLegibility;
   }
 
+  .MuiButton-root {
+    text-transform: none;
+  }
+
   a {
     color: ${colors.skyBlue};
     text-decoration: underline;
 
     &:hover {
       text-decoration: none;
-    }
-  }
-
-  .badge-animation {
-
-    svg {
-      g {
-        g,
-        rect {
-          transition: transform ease .3s;
-          transform-origin: 50% 50%;
-        }
-      }
-
-      &:hover {
-        g:nth-child(2) {
-          rect {
-            transform: scale(1.15);
-          }
-        }
-        g:nth-child(3){
-          g,
-          rect {
-            transform: translateY(2%);
-          }
-        }
-      }
     }
   }
 `;
