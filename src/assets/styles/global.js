@@ -54,6 +54,12 @@ export default createGlobalStyle`
     text-rendering: optimizeLegibility;
   }
 
+  img,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
   .MuiButton-root {
     text-transform: none;
   }

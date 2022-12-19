@@ -17,9 +17,11 @@ import {
 import { Link as RouterLink } from 'react-router-dom';
 
 import MenuIcon from '@mui/icons-material/Menu';
+import navItems from 'data/navItems';
+
+console.log(navItems)
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
 
 const DrawerAppBar = (props) => {
   const { window, setLightTheme } = props;
@@ -37,9 +39,9 @@ const DrawerAppBar = (props) => {
     <Box onClick={handleDrawerToggle}>
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+          <ListItem key={item?.id} disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }} to={item?.link} component={RouterLink}>
+              <ListItemText primary={item?.title} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -68,12 +70,9 @@ const DrawerAppBar = (props) => {
             sx={{ flexGrow: 1, textAlign: 'left' }}
           > </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <Button sx={{ color: '#fff' }} to="profile" component={RouterLink}>
-              Profile
-            </Button>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+              <Button key={item.id} sx={{ color: '#fff' }} to={item?.link} component={RouterLink}>
+                {item?.title}
               </Button>
             ))}
               <FormControlLabel
