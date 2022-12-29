@@ -1,14 +1,12 @@
 import Info from 'dashboard/Info';
-import AboutMe from 'dashboard/AboutMe';
-import Education from 'dashboard/Education';
+import LanguagesTools from 'dashboard/LanguagesTools';
 import Acheivements from 'dashboard/Acheivements';
 
 const Dashboard = () => (
   <>
     <Info />
-    <AboutMe />
+    <LanguagesTools />
     <Acheivements />
-    <Education />
   </>
 );
 

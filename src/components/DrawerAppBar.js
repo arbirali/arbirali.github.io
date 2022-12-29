@@ -19,8 +19,6 @@ import { Link as RouterLink } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import navItems from 'data/navItems';
 
-console.log(navItems)
-
 const drawerWidth = 240;
 
 const DrawerAppBar = (props) => {

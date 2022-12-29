@@ -3,64 +3,40 @@ import {
   Grid,
   Box,
   Button,
-  Card,
   CardMedia,
   CardContent,
   CardActions,
 } from '@mui/material';
-import ReactNanoDegree from 'assets/images/ReactNanoDegree.svg';
-import UdemyCertificate from 'assets/images/JavaScript.jpg';
+import { StyledCard } from 'dashboard/styles';
+import acheivements from 'data/acheivements';
 
 const Acheivements = () => (
   <Box sx={{ mb: 3 }}>
     <Typography component="h2" variant="h4" gutterBottom>Education &amp; Training</Typography>
-    <Grid container spacing={2}>
-      <Grid item xs={6} sx={{ display: 'flex' }}>
-        <Card>
-          <CardMedia
-            component="img"
-            height="140"
-            image={ReactNanoDegree}
-            alt="JavaScript Understanding the Weird Parts"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              React Nano Degree (Udacity)
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button
-              size="small"
-              target="_blank"
-              variant="contained"
-              href="https://graduation.udacity.com/nd019"
-            >View Certificate</Button>
-          </CardActions>
-        </Card>
-      </Grid>
-      <Grid item xs={6} sx={{ display: 'flex' }}>
-        <Card>
-          <CardMedia
-            component="img"
-            height="140"
-            image={UdemyCertificate}
-            alt="JavaScript Understanding the Weird Parts"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              JavaScript: Understanding the Weird Parts (Udemy)
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button
-              size="small"
-              target="_blank"
-              variant="contained"
-              href="https://www.udemy.com/certificate/UC-I5GD2A1V/"
-            >View Certificate</Button>
-          </CardActions>
-        </Card>
-      </Grid>
+    <Grid sx={{ display: 'flex', flexWrap: 'wrap' }}>
+      {
+        acheivements.map( (acheivement) => (
+          <StyledCard key={acheivement?.id}>
+            <CardMedia
+              component="img"
+              height="140"
+              image={acheivement?.imageUrl}
+              alt={acheivement?.title}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5">{acheivement?.title}</Typography>
+            </CardContent>
+            <CardActions>
+              <Button
+                size="small"
+                target="_blank"
+                variant="contained"
+                href={acheivement?.certificate}
+              >View Certificate</Button>
+            </CardActions>
+          </StyledCard>
+        ))
+      }
     </Grid>
   </Box>
 );

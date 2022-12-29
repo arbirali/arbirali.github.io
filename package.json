@@ -5,6 +5,7 @@
   "homepage": "https://arbirali.github.io/",
   "dependencies": {
     "@mui/icons-material": "^5.10.9",
+    "@mui/lab": "^5.0.0-alpha.114",
     "@mui/material": "^5.10.13",
     "@mui/styled-engine-sc": "^5.10.6",
     "@testing-library/jest-dom": "^5.16.5",

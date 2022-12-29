@@ -4,7 +4,6 @@ const navItem = (title, link = '/') => ({ id: generateKey('navItem'), title, lin
 
 const navItems = [
   navItem('Home', '/'),
-  navItem('React.js'),
 ];
 
 export default navItems;

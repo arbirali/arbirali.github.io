@@ -45,7 +45,7 @@ export default createGlobalStyle`
 
   body {
     min-width: 320px;
-    background: ${(props) => (props.theme ? '#f1f1f1' : colors.darkBlue)};
+    background: ${(props) => (props.theme ? '#ececec' : colors.darkBlue)};
     color: ${(props) => (props.theme ? 'rgba(0,0,0, .7)' : colors.lightBlue)};
     font-size: ${fonts.baseFontSize};
     font-family: ${fonts.fontFamilySanSerif};

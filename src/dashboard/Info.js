@@ -1,8 +1,6 @@
 import {
   Avatar,
   Grid,
-  Box,
-  Chip,
   Paper,
   Stack,
   Divider,
@@ -15,7 +13,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import CallIcon from '@mui/icons-material/Call';
 
-import skills from 'data/skills';
+import { ABOUT_ME } from 'data/aboutMe';
 import { GITHUBURL, LINKEDINURL, PHONENUMBER, EMAIL } from 'utils/urls';
 
 const Info = () => (
@@ -36,12 +34,9 @@ const Info = () => (
       </Grid>
       <Grid item xs={8}>
         <Typography component="h1" variant="h2" gutterBottom>Rahat Ali</Typography>
+        <Typography component="h2" variant="h5" gutterBottom><em>Senior Front-end Developer</em></Typography>
         <Divider sx={{ mb: 2 }} />
-        <Box sx={{ mb: 1 }}>
-          {
-            skills.map((skill) => <Chip color="primary" sx={{ mr: .5, mb: .5 }} key={skill?.id} label={skill?.title} />)
-          }
-        </Box>
+        <Typography sx={{ mb: 3 }}>{ABOUT_ME}</Typography>
         <Stack
           direction="row"
           divider={<Divider orientation="vertical" flexItem />}
