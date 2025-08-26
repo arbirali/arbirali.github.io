@@ -53,7 +53,8 @@ export const SkillsOverviewSection = () => {
                   </div>
                   <Progress
                     className="h-2"
-                    color="secondary"
+                    isStriped
+                    color="success"
                     value={99}
                   />
                 </CardBody>

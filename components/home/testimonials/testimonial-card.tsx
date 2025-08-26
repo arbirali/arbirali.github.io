@@ -16,7 +16,7 @@ export const TestimonialCard = memo(function TestimonialCard({
   avatar,
 }: testimonialCardProps) {
   return (
-    <Card className="border-none h-80 md:h-64 bg-white/90 dark:bg-black/40">
+    <Card className="border-none h-80 md:h-68 bg-white/90 dark:bg-black/40">
       <CardBody className="p-6 flex flex-col">
         <div>
           <Icon className="w-8 h-8 text-primary-500 mb-4" icon="lucide:quote" />

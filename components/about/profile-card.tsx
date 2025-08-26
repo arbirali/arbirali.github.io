@@ -1,11 +1,13 @@
 "use client";
 
 import { memo } from "react";
-import { Card, CardFooter, Image } from "@heroui/react";
+import { Card, CardFooter } from "@heroui/react";
+import Image from "next/image";
 
 import { HighlightText } from "@/components/textAnimations/highlight-text";
 import { SplittingText } from "@/components/textAnimations/splitting-text";
 import { ProfileCardProps } from "@/components/about/types";
+import ProfileImage from "@/images/rahat-ali.jpeg";
 
 export const ProfileCard = memo(function ProfileCard({
   image,
@@ -22,11 +24,11 @@ export const ProfileCard = memo(function ProfileCard({
             <Image
               alt="Profile background"
               className="z-0 object-cover"
-              src={image}
+              src={ProfileImage}
             />
             <CardFooter className="absolute bg-black/50 bottom-0 z-10 border-t border-white/20">
               <div className="flex flex-col text-white">
-                <HighlightText className="text-lg font-semibold " text={name} />
+                <HighlightText className="text-lg font-semibold text-center" text={name} />
                 <p className="text-sm text-white/80">{title}</p>
               </div>
             </CardFooter>

@@ -1,3 +1,5 @@
+import { Certificate } from "crypto";
+
 export const DATA = {
   home: {
     hero: {
@@ -15,19 +17,19 @@ export const DATA = {
           name: "Web Accessibility",
           level: 90,
           icon: "lucide:code",
-          color: "secondary",
+          color: "danger",
         },
         {
-          name: "UI/UX Design",
+          name: "UI/UX Development",
           level: 95,
           icon: "lucide:layout-dashboard",
           color: "primary",
         },
         {
-          name: "Mobile Development",
-          level: 85,
+          name: "Responsive Web Design",
+          level: 90,
           icon: "lucide:smartphone",
-          color: "success",
+          color: "secondary",
         },
         {
           name: "Motion Design",
@@ -43,116 +45,108 @@ export const DATA = {
       items: [
         {
           id: 1,
-          name: "Sarah Johnson",
-          role: "Product Manager at TechNova",
+          name: "Waqar M Javaid",
+          role: "Business Analyst",
           content:
-            "The design system created for our SaaS platform reduced our development time by 40% while improving consistency across all our products. The attention to accessibility standards was particularly impressive.",
+            "I had the pleasure of working with Rahat Ali on multiple projects, where he demonstrated exceptional expertise as a Senior UI/UX Developer. His ability to translate complex requirements into intuitive, user-friendly designs greatly enhanced the overall product experience.",
           avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=1",
+          url: ''
         },
         {
           id: 2,
-          name: "Michael Chen",
-          role: "CTO at StartUpGrid",
+          name: "Muhammad Raza",
+          role: "Senior Software Engineer",
           content:
-            "Working with this team transformed our mobile app's user retention by 35% in just three months. Their data-driven design approach helped us identify pain points we didn't even know existed.",
+            "I had the pleasure of working with Rahat for almost 4 years at Strategic Systems International. He was always available to help when required. He a seasoned frontend developer with eagerness to learn and try new technologies. His ability to communicate and his strong IT background are highly valuable. And amongst all of his many duties, he always finds the time to help wherever it is necessary.",
           avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=2",
+          url: ''
         },
         {
           id: 3,
-          name: "David Rodriguez",
-          role: "UX Director at FinTech Global",
+          name: "Shavaiz Hussain",
+          role: "Tech Lead @ Arbisoft",
           content:
-            "The dashboard redesign resulted in a 50% reduction in support tickets. Their ability to balance complex financial data with clean visualization is unmatched in the industry.",
+            "Rahat Ali is a motivated, forward thinking as well as intelligent frontend engineer who has lots of knowledge in his field. Wise, intelligent, excellent and well educated frontend engineer who can be trusted. Rahat Ali leads by example and many people at Arbisoft find his enthusiasm and dedication both inspiring and motivating.",
           avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=3",
+          url: ''
         },
         {
           id: 4,
-          name: "Priya Patel",
-          role: "E-commerce Manager at StyleHub",
+          name: "Noman Shafi",
+          role: "Full Stack Software Engineer",
           content:
-            "Our conversion rate increased by 28% after implementing their checkout flow redesign. They understood our international user base better than our internal team.",
+            "Rahat is a very hard-working person who can easily tackle any front-end problem. We have worked on several projects, and I found him a highly skilled and dedicated professional. His expertise in the field of front-end engineering has helped our company immensely. He’s also an all-around great guy to work with! I highly recommend him to anyone looking for help on their team or front-end project.",
           avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=4",
+          url: ''
         },
         {
           id: 5,
-          name: "James Wilson",
-          role: "Head of Product at HealthTrack",
+          name: "Yasser Farooq",
+          role: "AI Futurist | Frontend Developer",
           content:
-            "The healthcare app we built together received FDA approval largely due to its intuitive patient interface. Their understanding of regulatory requirements saved us months of rework.",
+            "Rahat is very talented, very cooperative and very intelligent developer. I have learned alot from him and he always helped me with difficult projects. He never looses his temper and is always ready to help others. He has excellent team work skills and great learning skills.",
           avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=5",
-        },
-        {
-          id: 6,
-          name: "Lisa Nguyen",
-          role: "Marketing Director at EduTech Solutions",
-          content:
-            "Our user onboarding completion rate went from 65% to 92% after their redesign. The way they simplified complex educational concepts into clear interfaces was remarkable.",
-          avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=6",
-        },
-        {
-          id: 7,
-          name: "Thomas Okafor",
-          role: "Founder at AgriTech Africa",
-          content:
-            "They designed an agricultural monitoring app that works perfectly even in low-connectivity rural areas. Cultural sensitivity and technical innovation in perfect balance.",
-          avatar: "https://img.heroui.chat/image/avatar?w=100&h=100&u=7",
+          url: ''
         },
       ],
     },
   },
   about: {
     profile: {
-      name: "Sofiane Bahmed",
-      title: "Full Stack Developer",
+      name: "Rahat Ali",
+      title: "Frontend Developer",
       image:
         "https://res.cloudinary.com/devq06psf/image/upload/v1750626859/chic_soba_apc1ht.png",
       description: [
-        "I'm a creative full-stack developer with a passion for UI/UX design and clean code. I focus on building beautiful, functional, and high-performance websites and web apps.",
-        "My approach is both technical and aesthetic — I enjoy turning complex problems into elegant user experiences. I work primarily with modern frameworks like React, Vite, and TailwindCSS.",
-        "Outside of code, I enjoy motion design, product strategy, and always pushing the boundaries of front-end development.",
+        "I am a Frontend Web Developer specializing in building modern, responsive, and accessible websites. With a passion for UI/UX design and clean, maintainable code, I create high-performance web applications that deliver seamless digital experiences.",
+        "My expertise includes React, Vite, and TailwindCSS, which I use to develop scalable, fast-loading, and SEO-friendly web solutions. I enjoy transforming complex challenges into elegant, user-focused products that combine functionality with aesthetics.",
+        "In addition to frontend development, I explore AI-driven web technologies and product strategy, continuously pushing the boundaries of modern web engineering."
       ],
     },
     education: [
       {
-        title: "High School of Art and Design",
+        title: "React Nano Degree",
         date: "2003 - 2006",
         icon: "mdi:palette",
         description:
-          "Focused on foundational art and visual design principles, which sparked my early interest in creative problem solving. Explored traditional media, digital illustration, and visual storytelling.",
+          "Completed a comprehensive program focused on modern front-end development with React. Gained hands-on experience in building dynamic, high-performance web applications using React, Redux, React Router, and ES6+ JavaScript. Strengthened expertise in component-based architecture, state management, and responsive design while applying industry best practices.",
       },
       {
-        title: "University of Technology and Design",
+        title: "JavaScript: Understanding the Weird Parts",
         date: "2006 - 2010",
         icon: "mdi:school",
         description:
-          "Earned a Bachelor's degree in Computer Science with a minor in Design. Gained strong skills in software development, user interface engineering, data structures, and human-computer interaction.",
+          "Completed an advanced course that explored the inner workings of JavaScript. Developed a deep understanding of closures, prototypal inheritance, execution contexts, and asynchronous programming. Strengthened problem-solving skills and the ability to write clean, efficient, and scalable JavaScript code for real-world applications.",
       },
       {
-        title: "Institute of Interactive Media",
+        title: "University of the Punjab",
         date: "2011 - 2012",
         icon: "mdi:school-outline",
         description:
-          "Completed a Master's degree specializing in UX/UI Design and Front-End Development. Merged technical expertise with visual communication to design user-centered digital products and prototypes.",
+          "Earned a Bachelor’s degree with a focus on analytical thinking, research, and communication. Built a strong foundation in critical problem-solving and structured learning, complementing technical skills in software development and web technologies. This multidisciplinary background contributes to a user-focused and well-rounded approach to web development.",
       },
     ],
     experience: [
       {
-        title: "Creative Director",
-        date: "2018 - Present",
+        title: "Senior Software Engineer - Frontend",
+        company: "Arbisoft",
+        date: "2019 - Present",
         icon: "mdi:briefcase",
         description:
-          "Lead creative and development teams to build digital experiences that combine innovation with user empathy. Oversee branding, UI/UX strategy, and development pipelines for tech startups and clients.",
+          "Lead creative and development teams to build digital experiences that combine innovation with user empathy. Oversee branding, UI/UX strategy, and development pipelines for tech startups and clients. Next, RTKQuery, MUI, Tailwind, REST APIs, and Bootstrap.",
       },
       {
-        title: "Senior UX Engineer",
-        date: "2015 - 2018",
+        title: "Senior UI/UX Developer",
+        company: "Strategic Systems Internal - SSI",
+        date: "2015 - 2019",
         icon: "mdi:monitor-dashboard",
         description:
-          "Designed and implemented high-fidelity web interfaces using React, Figma, and Tailwind. Collaborated cross-functionally with developers and designers to craft intuitive user flows and interactions.",
+          "Designed and implemented high-fidelity web interfaces using React, Figma, and Bootstrap. Collaborated cross-functionally with developers and designers to craft intuitive user flows and interactions.",
       },
       {
-        title: "Front-End Developer & Designer",
-        date: "2012 - 2015",
+        title: "Senior Front-End Developer",
+        company: "AIM Solutions",
+        date: "2013 - 2015",
         icon: "mdi:code-tags",
         description:
           "Developed responsive websites and applications with a focus on accessibility, visual aesthetics, and performance. Delivered pixel-perfect interfaces from wireframes to production code.",
@@ -176,39 +170,38 @@ export const DATA = {
           "I build fast APIs and scalable backends using Node.js, Bun, and Python.",
         tools: [
           { name: "Node.js", icon: "logos:nodejs-icon" },
-          { name: "Bun", icon: "logos:bun" },
           { name: "Python", icon: "logos:python" },
           { name: "MySQL", icon: "logos:mysql-icon" },
           { name: "PostgresSQL", icon: "logos:postgresql" },
           { name: "OpenAI", icon: "simple-icons:openai" },
         ],
       },
-      uiUx: {
-        description:
-          "I design smooth, user-centered interfaces and high-fidelity prototypes.",
-        tools: [
-          { name: "Figma", icon: "logos:figma" },
-          { name: "Framer", icon: "simple-icons:framer", color: "#0055FF" },
-          { name: "Notion", icon: "logos:notion-icon" },
-        ],
-      },
-      graphicDesign: {
-        description:
-          "My graphic work includes logos, branding, and posters using Adobe Suite.",
-        tools: [
-          { name: "Photoshop", icon: "logos:adobe-photoshop" },
-          { name: "Illustrator", icon: "logos:adobe-illustrator" },
-        ],
-      },
-      motionDesign: {
-        description:
-          "I animate UI flows and cinematic intros using After Effects and Blender.",
-        tools: [
-          { name: "After Effects", icon: "logos:adobe-after-effects" },
-          { name: "Premiere Pro", icon: "logos:adobe-premiere" },
-          { name: "Blender", icon: "logos:blender" },
-        ],
-      },
+      // uiUx: {
+      //   description:
+      //     "I design smooth, user-centered interfaces and high-fidelity prototypes.",
+      //   tools: [
+      //     { name: "Figma", icon: "logos:figma" },
+      //     { name: "Framer", icon: "simple-icons:framer", color: "#0055FF" },
+      //     { name: "Notion", icon: "logos:notion-icon" },
+      //   ],
+      // },
+      // graphicDesign: {
+      //   description:
+      //     "My graphic work includes logos, branding, and posters using Adobe Suite.",
+      //   tools: [
+      //     { name: "Photoshop", icon: "logos:adobe-photoshop" },
+      //     { name: "Illustrator", icon: "logos:adobe-illustrator" },
+      //   ],
+      // },
+      // motionDesign: {
+      //   description:
+      //     "I animate UI flows and cinematic intros using After Effects and Blender.",
+      //   tools: [
+      //     { name: "After Effects", icon: "logos:adobe-after-effects" },
+      //     { name: "Premiere Pro", icon: "logos:adobe-premiere" },
+      //     { name: "Blender", icon: "logos:blender" },
+      //   ],
+      // },
     },
   },
   projects: {
@@ -471,29 +464,32 @@ export const DATA = {
     { name: "Home", href: "/", icon: "lucide:home" },
     { name: "About", href: "/about", icon: "lucide:user" },
     { name: "Projects", href: "/projects", icon: "lucide:folder-code" },
-    { name: "Contact", href: "/contact", icon: "lucide:send" },
+    // { name: "Contact", href: "/contact", icon: "lucide:send" },
   ],
   footer: {
-    name: "Sofiane Bahmed",
+    name: "Rahat Ali",
     description: "Always interested in new projects and collaborations.",
     contact: {
-      email: "hello@example.com",
-      phone: "+1 (555) 123-4567",
-      location: "San Francisco, CA",
+      email: "rahat.amiable@gmail.com",
+      phone: "+92 (304) 989-1020",
+      whatsAppLink: "https://wa.me/923049891020?text=Hello%20Rahat%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect.",
+      whatsAppLabel: "Chat on WhatsApp",
+      location: "Lahore, PK",
     },
+
     socialLinks: [
-      { platform: "X", url: "https://x.com", icon: "simple-icons:x" },
-      { platform: "GitHub", url: "https://github.com", icon: "mdi:github" },
+      // { platform: "X", url: "https://x.com", icon: "simple-icons:x" },
+      { platform: "GitHub", url: "https://github.com/arbirali", icon: "mdi:github" },
       {
         platform: "LinkedIn",
-        url: "https://linkedin.com",
+        url: "https://www.linkedin.com/in/ali-rahat/",
         icon: "mdi:linkedin",
       },
-      {
-        platform: "Dribbble",
-        url: "https://dribbble.com",
-        icon: "mdi:dribbble",
-      },
+      // {
+      //   platform: "Dribbble",
+      //   url: "https://dribbble.com",
+      //   icon: "mdi:dribbble",
+      // },
     ],
     services: ["UI/UX Design", "Web Development", "Mobile Apps", "Consulting"],
   },

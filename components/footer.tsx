@@ -58,6 +58,10 @@ export const Footer = () => {
                 <a href={`tel:${contact.phone}`}>{contact.phone}</a>
               </li>
               <li className="flex items-center gap-2">
+                <Icon icon="lucide:message-circle-more" />
+                <a href={contact.whatsAppLink}>{contact.whatsAppLabel}</a>
+              </li>
+              <li className="flex items-center gap-2">
                 <Icon icon="lucide:map-pin" />
                 {contact.location}
               </li>

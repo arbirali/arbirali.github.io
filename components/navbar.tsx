@@ -33,7 +33,7 @@ export const Navigation = () => {
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent className="flex justify-between items-center w-full">
-        <NavbarBrand>
+        <NavbarBrand className="flex-grow-0">
           <motion.div
             animate={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -20 }}
@@ -49,7 +49,7 @@ export const Navigation = () => {
           </motion.div>
         </NavbarBrand>
 
-        <NavbarContent className="hidden sm:flex justify-center gap-6 flex-grow">
+        <NavbarContent className="hidden sm:flex gap-6 flex-grow flex-1 !justify-center">
           {menuItems.map((item, index) => (
             <NavbarItem key={item.name}>
               <motion.div
