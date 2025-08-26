@@ -1,9 +1,0 @@
-{
-  "[project]/node_modules/next-themes/dist/index.mjs [app-client] (ecmascript, next/dynamic entry)": {
-    "id": "[project]/node_modules/next-themes/dist/index.mjs [app-client] (ecmascript, next/dynamic entry)",
-    "files": [
-      "static/chunks/node_modules_next-themes_dist_index_mjs_38ff11ad._.js",
-      "static/chunks/node_modules_next-themes_dist_index_mjs_e5b1f237._.js"
-    ]
-  }
-}
