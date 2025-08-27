@@ -3,7 +3,7 @@
 // const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
-  // output: "export",
+  output: "export",
   // basePath: isProd ? "/arbirali.github.io" : "",
   // assetPrefix: isProd ? "/arbirali.github.io/" : "",
   images: {
