@@ -14,7 +14,6 @@ export default function AboutPage() {
       <PageHeader texts={DATA.morphingTexts.about} />
       <ProfileCard
         description={profile.description}
-        image={profile.image}
         name={profile.name}
         title={profile.title}
       />

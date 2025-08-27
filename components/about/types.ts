@@ -1,5 +1,5 @@
 export interface ProfileCardProps {
-  image: string;
+  image?: string;
   name: string;
   title: string;
   description: readonly string[];

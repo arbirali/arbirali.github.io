@@ -14,26 +14,26 @@ export const DATA = {
         " Specialized in creating modern digital experiences with cutting-edge technologies",
       overview: [
         {
-          name: "Web Accessibility",
+          name: "Responsive Web Design & Accessibility",
           level: 90,
           icon: "lucide:code",
           color: "danger",
         },
         {
-          name: "UI/UX Development",
+          name: "Performance Optimization & SEO",
           level: 95,
           icon: "lucide:layout-dashboard",
           color: "primary",
         },
         {
-          name: "Responsive Web Design",
+          name: "UI/UX Implementation with TailwindCSS & CSS-in-JS",
           level: 90,
           icon: "lucide:smartphone",
           color: "secondary",
         },
         {
-          name: "Motion Design",
-          level: 88,
+          name: "JavaScript & Modern Frameworks (React, Next.js)",
+          level: 93,
           icon: "lucide:video",
           color: "warning",
         },
@@ -472,9 +472,9 @@ export const DATA = {
     contact: {
       email: "rahat.amiable@gmail.com",
       phone: "+92 (304) 989-1020",
+      location: "Lahore, PK",
       whatsAppLink: "https://wa.me/923049891020?text=Hello%20Rahat%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect.",
       whatsAppLabel: "Chat on WhatsApp",
-      location: "Lahore, PK",
     },
 
     socialLinks: [
@@ -491,6 +491,16 @@ export const DATA = {
       //   icon: "mdi:dribbble",
       // },
     ],
-    services: ["UI/UX Design", "Web Development", "Mobile Apps", "Consulting"],
+    services: [
+      "Web Development",
+      "Frontend Development",
+      "UI/UX Implementation",
+      "Performance Optimization & SEO",
+      "Consulting & Strategy",
+      "AI-Powered Web Solutions",
+      "API Integration & Data Visualization",
+      "Maintenance & Support",
+    ],
+    copyright: `© ${ new Date().getFullYear() } Rahat Ali. All rights reserved.`,
   },
 } as const;

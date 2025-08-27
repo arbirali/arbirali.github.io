@@ -40,14 +40,14 @@ export const SkillsOverviewSection = () => {
               <Card className="border-none shadow-md ">
                 <CardBody className="p-6">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className={`p-3 rounded-full bg-secondary-100`}>
+                    <div className={`p-3 rounded-full bg-success-100`}>
                       <Icon
-                        className={`w-6 h-6 text-secondary-500`}
+                        className={`w-6 h-6 text-success-500`}
                         icon="lucide:code"
                       />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold">Frontend Development</h3>
+                      <h3 className="text-xl font-semibold">AI-Powered Frontend Development</h3>
                       <p className="text-foreground-600">99%</p>
                     </div>
                   </div>
@@ -81,7 +81,7 @@ export const SkillsOverviewSection = () => {
                       />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold">{skill.name}</h3>
+                      <h3 className="text-sm font-semibold">{skill.name}</h3>
                       <p className="text-foreground-600">{skill.level}%</p>
                     </div>
                   </div>
