@@ -7,6 +7,7 @@ const nextConfig = {
   // basePath: isProd ? "/arbirali.github.io" : "",
   // assetPrefix: isProd ? "/arbirali.github.io/" : "",
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
