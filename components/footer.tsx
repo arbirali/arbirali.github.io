@@ -9,6 +9,8 @@ import { DATA } from "@/data";
 export const Footer = () => {
   const { name, description, contact, socialLinks, services, copyright } = DATA.footer;
 
+  const currentDate = new Date();
+
   return (
     <footer className="bg-content1 py-12">
       <motion.div
@@ -70,7 +72,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="border-t border-divider pt-8 text-center text-foreground-500">
-          <p>{copyright}</p>
+          <p>{copyright(currentDate, name)}</p>
         </div>
       </motion.div>
     </footer>

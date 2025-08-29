@@ -1,5 +1,3 @@
-import { Certificate } from "crypto";
-
 export const DATA = {
   home: {
     hero: {
@@ -501,6 +499,6 @@ export const DATA = {
       "API Integration & Data Visualization",
       "Maintenance & Support",
     ],
-    copyright: `© ${ new Date().getFullYear() } Rahat Ali. All rights reserved.`,
+    copyright: (date: Date, name: String) => (`© ${ date.getFullYear() } ${ name }. All rights reserved.`),
   },
 } as const;
