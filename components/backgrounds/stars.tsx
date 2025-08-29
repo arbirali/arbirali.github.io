@@ -114,7 +114,7 @@ function StarsBackground({
   return (
     <div
       className={cn(
-        "relative size-full bg-[radial-gradient(ellipse_at_bottom,_#262626_0%,_#000_100%)]",
+        "stars-background relative bg-[radial-gradient(ellipse_at_bottom,_#262626_0%,_#000_100%)] overflow-hidden sm:overflow-visible",
         className,
       )}
       data-slot="stars-background"
